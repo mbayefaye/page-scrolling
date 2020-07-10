@@ -1,0 +1,63 @@
+body {
+  background-color: #267bb4;
+  transition: all 1s ease-in;
+  padding: 50px;
+  color: #111;
+  font-family: sans-serif;
+  line-height: 32px;
+  font-size: 18px;
+}
+h1 {
+  font-family: sans-serif;
+}
+.colorOne {
+  background-color: #263e46;
+  color: #000;
+}
+.colorTwo {
+  background-color: #fff;
+  color: #000;
+}
+
+#mainContent {
+  width: 420px;
+  margin: 0 auto;
+}
+
+#mainContent p {
+  padding: 20px;
+}
+#mainContent #firstBox {
+  font-weight: bold;
+  transform: translate3d(-30px, 0, 0);
+  transition: all 0.5s ease-out;
+  opacity: 0;
+}
+#mainContent #firstBox.active {
+  background-color: #333;
+  color: #fff;
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+#mainContent #secondBox {
+  transition: all 0.2s ease-in-out;
+  transform: translate3d(0, 30px, 0);
+  opacity: 0;
+}
+#mainContent #secondBox.active {
+  background-color: #1581af;
+  color: #fff;
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+#mainContent ol li {
+  padding-left: 7px;
+  margin-bottom: 15px;
+  transition: all 0.2s ease-in-out;
+  transform: translate3d(20px, 0, 0);
+  opacity: 0;
+}
+#mainContent ol li.active {
+  transform: translate3d(0px, 0, 0);
+  opacity: 1;
+}
